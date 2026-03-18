@@ -1,112 +1,111 @@
 # Code-genaration-Narrative-to-IEC-61131
 AI tool that converts natural language into IEC 61131 PLC code
 
-React + FastAPI Firebase Authentication App
-A full-stack application with React frontend and FastAPI backend, featuring Firebase authentication and storage.
+🚀 Code Generation – Narrative to IEC 61131
 
-🚀 Live Demo
+AI-powered platform that converts natural language into IEC 61131 PLC code for industrial automation.
 
-👉 Visit the App Here: https://plc-xi.vercel.app/
+🌐 Live Demo
 
-Project Structure
-├── frontend/          # React + Vite frontend
-│   ├── src/
-│   │   ├── components/   # UI components
-│   │   ├── contexts/     # React contexts
-│   │   ├── lib/         # Utilities and configs
-│   │   └── pages/       # Page components
-│   └── package.json
-└── server/            # FastAPI backend
-    ├── main.py        # FastAPI application
-    └── requirements.txt
-Features
-✅ React frontend with Vite
-✅ Tailwind CSS 3 for styling
-✅ shadcn/ui components
-✅ Firebase Authentication (Google Sign-in)
-✅ Firebase Firestore for chat storage
-✅ Protected routes
-✅ FastAPI backend
-✅ Firebase Admin SDK integration
-✅ Chat sessions and history management
-✅ Real-time chat interface
-✅ IEC 61131-3 Programming Assistant
-✅ Structured JSON responses (text, ladder diagrams, PLC code)
-✅ Monaco Editor for code display
-✅ Copy-to-clipboard functionality
-🔄 Firebase Storage (ready for implementation)
-Setup Instructions
+👉 https://plc-xi.vercel.app/
+
+📌 Features
+
+🔐 Firebase Authentication (Google Sign-in)
+
+⚡ React + Vite frontend
+
+🚀 FastAPI backend
+
+💬 Chat-based AI interface
+
+🤖 IEC 61131-3 PLC code generation
+
+📊 Structured outputs (text, ladder logic, PLC code)
+
+🧾 Monaco Editor for code display
+
+📋 Copy-to-clipboard
+
+🔒 Protected routes
+
+🔄 Chat history with Firestore
+
+🏗️ Tech Stack
+
+->Frontend: React, Vite, Tailwind CSS
+
+->Backend: FastAPI (Python)
+
+->Auth & DB: Firebase Authentication, Firestore
+
+->AI: Gemini API
+
+📂 Project Structure
+frontend/   # React frontend
+server/     # FastAPI backend
+
+⚙️ Setup
 Prerequisites
-Node.js (v16 or higher)
-Python (v3.8 or higher)
-Firebase Project
-Firebase Configuration
-Go to Firebase Console
-Create a new project or select existing one
-Enable Authentication and set up Google provider
-Enable Firestore Database
-Enable Storage
-Get your Firebase config and service account key
-Frontend Setup
-Navigate to frontend directory:
 
+Node.js (v16+)
+
+Python (3.8+)
+
+Firebase project
+
+🔹 Frontend
 cd frontend
-Install dependencies:
-
 npm install
-Create .env.local file with your Firebase config:
+npm run dev
+
+Create .env.local:
 
 VITE_FIREBASE_API_KEY=your-api-key
 VITE_FIREBASE_AUTH_DOMAIN=your-project.firebaseapp.com
 VITE_FIREBASE_PROJECT_ID=your-project-id
-VITE_FIREBASE_STORAGE_BUCKET=your-project.appspot.com
-VITE_FIREBASE_MESSAGING_SENDER_ID=123456789
-VITE_FIREBASE_APP_ID=your-app-id
-Start development server:
 
-npm run dev
-Backend Setup
-Navigate to server directory:
-
+🔹 Backend
 cd server
-Create virtual environment:
-
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-Install dependencies:
-
+source venv/bin/activate   # Windows: venv\Scripts\activate
 pip install -r requirements.txt
-Download your Firebase service account key and save as firebase-service-account.json in the server directory
-
-Start the server:
-
 python main.py
-Usage
-Start both frontend and backend servers
-Open http://localhost:5173 in your browser
-Click "Continue with Google" to authenticate
-You'll be redirected to the protected home page
-API Endpoints
-System
-GET / - Root endpoint
-GET /health - Health check
-User (requires authentication)
-GET /api/v1/user/profile - Get user profile
-POST /api/v1/user/verify-token - Verify token validity
-GET /api/v1/user/protected - Protected endpoint example
-AI (requires authentication)
-POST /api/v1/ai/chat - Chat with Gemini AI
-GET /api/v1/ai/status - Get AI service status
-Chat Sessions (requires authentication)
-POST /api/v1/chat/sessions - Create new chat session
-GET /api/v1/chat/sessions - Get all user chat sessions
-GET /api/v1/chat/sessions/{id}/messages - Get messages for a session
-POST /api/v1/chat/sessions/{id}/messages - Send message to session
-PUT /api/v1/chat/sessions/{id} - Update session title
-DELETE /api/v1/chat/sessions/{id} - Delete chat session
-Next Steps
-Add more protected routes
-Implement file upload with Firebase Storage
-Add user management features
-Implement database integration
-Add error handling and notifications
+
+🚀 Usage
+
+Start frontend and backend
+
+Open http://localhost:5173
+
+Login with Google
+
+Enter prompt → Get PLC code
+
+📡 API Endpoints
+
+->GET /health → Health check
+
+->POST /api/v1/ai/chat → AI chat
+
+->GET /api/v1/user/profile → User data
+
+->POST /api/v1/chat/sessions → Create session
+
+🔮 Future Improvements
+
+->File upload & PLC export
+
+->Advanced ladder diagram visualization
+
+->Better AI accuracy
+
+->Notifications & error handling
+
+🎯 Use Cases
+
+->PLC programmers
+
+->Automation engineers
+
+->Students learning industrial control systems
