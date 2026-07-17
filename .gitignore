@@ -1,0 +1,30 @@
+# Python cache
+__pycache__/
+**/__pycache__/
+*.pyc
+
+# Python virtual environments
+venv/
+**/venv/
+.venv/
+**/.venv/
+
+# Node dependencies
+node_modules/
+**/node_modules/
+
+# Secrets
+.env
+**/.env
+firebase-service-account.json
+**/firebase-service-account.json
+
+# Build files
+dist/
+**/dist/
+build/
+**/build/
+
+# Misc
+*.stackdump
+*.zip
