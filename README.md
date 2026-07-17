@@ -8,13 +8,13 @@ The application uses a React + Vite frontend, FastAPI backend, Firebase Authenti
 
 ## 🚀 Live Demo
 
-👉 **Live Application:** [Add Deployed Application Link]
+👉 **Live Application:** https://code-genaration-narrative-to-iec-61131.onrender.com
 
 ---
 
 ## 🎥 Demo Video
 
-👉 **Project Demo Video:** [Add Google Drive Video Link]
+👉 **Project Demo Video:** https://drive.google.com/file/d/1X7MHFB2mRsd9LTjQE-E4y-Oa6PDAWtu7/view?usp=sharing
 
 ---
 
